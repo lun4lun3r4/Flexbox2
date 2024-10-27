@@ -1,0 +1,266 @@
+/* Estilos generales */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none; /* Desactiva los estilos predeterminados de los enlaces */
+  color: #529125; /* Color de enlace */
+}
+
+a:hover {
+  color: #285616; /* Color de enlace al pasar el mouse */
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente predeterminada */
+  background-image: url('paven.png'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el body */
+}
+
+header {
+  width: 100%; /* Ocupa el 100% del ancho */
+  text-align: center;
+}
+
+#logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el logotipo */
+}
+
+#logotipo img {
+  width: 140px; /* Ancho de 140 píxeles */
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px; /* Tamaño de fuente */
+  color: #70b231; /* Color del título */
+  text-shadow: 0px 2px 4px #333333; /* Sombra de texto */
+  text-align: center; /* Centrado */
+}
+
+nav {
+  width: 100%; /* Ocupa el 100% del ancho */
+  background-color: #333333; /* Color de fondo */
+  height: 40px; /* Altura del menú */
+  box-shadow: 0px 0px 2px grey; /* Sombra alrededor del menú */
+}
+
+nav ul {
+  display: flex; /* Utiliza flexbox para la lista */
+  justify-content: center; /* Centra la lista */
+  list-style: none; /* Desactiva los estilos de lista */
+  padding: 0; /* Elimina el padding */
+  width: 100%; /* Ancho completo */
+}
+
+nav ul li {
+  line-height: 40px; /* Altura de línea */
+  padding: 0 10px; /* Espaciado lateral */
+}
+
+nav ul li:hover {
+  background-color: #70b231; /* Color al pasar el ratón */
+  box-shadow: 0px 0px 4px grey inset; /* Sombra interior */
+}
+
+nav ul li a {
+  display: block; /* Hace que el enlace ocupe todo el espacio del li */
+  color: white; /* Color del texto */
+  padding: 0 10px;
+}
+
+#content {
+  display: flex; /* Utiliza flexbox para el contenido */
+  width: 90%; /* Ancho relativo */
+  max-width: 1250px; /* Ancho máximo */
+  min-height: 1100px; /* Mínimo de altura */
+  margin: 20px auto; /* Margen centrado */
+}
+
+#aside {
+  width: 200px; /* Ancho de la barra lateral */
+  background-color: white; /* Fondo blanco */
+  border: 1px solid #ccc; /* Borde gris claro */
+  box-shadow: 0px 2px 2px #ccc; /* Sombra */
+  position: relative; 
+  margin-left: 20px; /* Espaciado lateral */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.widget {
+  position: relative;
+  padding: 10px 0;
+  width: 180px; /* Ancho de widgets */
+  margin: 0 auto; /* Centrado */
+}
+
+.widget:not(:last-child) {
+  border-bottom: 2px dashed #ccc; /* Borde entre widgets */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.widget form {
+  display: flex; /* Usar flexbox para formularios */
+  flex-direction: column; /* Columna */
+  align-items: center; /* Centrado */
+}
+
+.widget label {
+  margin-bottom: 5px; /* Espaciado inferior */
+  text-align: center; /* Centrado */
+}
+
+.widget input[type="text"],
+.widget input[type="password"] {
+  width: 90%; /* Ancho relativo */
+  padding: 5px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espaciado inferior */
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+#aside h3 {
+  background-color: #dfdfdf; /* Fondo de encabezado */
+  padding: 1px; /* Espaciado interno */
+  text-align: center; /* Centrado */
+}
+
+input[type="submit"] {
+  background-color: #70b231; /* Fondo verde claro */
+  border-radius: 5px; /* Bordes redondeados */
+  border: none; /* Sin borde */
+  padding: 5px 10px; /* Espaciado interno */
+  color: white; /* Color del texto */
+  display: block; /* Ocupa todo el espacio */
+  margin: 10px auto; /* Margen centrado */
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0px 0px 2px gray; /* Sombra al pasar el mouse */
+}
+
+#aside a {
+  display: block; /* Cada enlace ocupa todo el espacio */
+  margin-top: 10px; /* Margen superior */
+  color: #529125; /* Color del enlace */
+}
+
+#aside a:hover {
+  color: #285616; /* Color al pasar el ratón */
+}
+
+#enlaces ul {
+  list-style: none; /* Desactiva los estilos de lista */
+}
+
+#sections {
+  flex: 3; /* Ocupa el 75% del espacio restante */
+  margin-left: 20px; /* Margen izquierdo */
+}
+
+#sections section {
+  margin-top: 40px; /* Margen superior */
+  background-color: white; /* Fondo blanco */
+  box-shadow: 0px 0px 4px #c9c9c9; /* Sombra */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 30px; /* Margen inferior */
+  position: relative; /* Posición relativa */
+}
+
+#sections section p {
+  text-align: justify; /* Justificar texto */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.stickers {
+  position: absolute;
+  top: 0;
+  height: 0; /* Sin altura */
+  width: 100%; /* Ancho completo */
+}
+
+.stickerOne {
+  position: absolute;
+  top: -20px; /* Posición superior */
+}
+
+.stickerTwo {
+  position: absolute;
+  right: 40px; /* Posición derecha */
+  top: -20px; /* Posición superior */
+}
+
+footer {
+  width: 100%; /* Ancho del 100% */
+  text-align: center; /* Centrado */
+  background-color: #333333; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  padding: 10px 0; /* Espaciado interno */
+  box-shadow: 0px 0px 2px gray; /* Sombra */
+  clear: both; /* Limpiar flotantes */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 1024px) {
+  #content {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+
+  #aside {
+    width: 100%; /* Barra lateral ocupa el 100% */
+    margin: 0; /* Sin margen */
+    box-shadow: none; /* Sin sombra */
+  }
+
+  #sections {
+    margin-left: 0; /* Sin margen izquierdo */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px; /* Tamaño de fuente más pequeño */
+  }
+
+  nav ul li {
+    padding: 0 5px; /* Espaciado más pequeño */
+  }
+
+  #aside {
+    margin-left: 0; /* Sin margen */
+    width: 100%; /* Ancho completo */
+  }
+
+  #sections {
+    width: 100%; /* Secciones ocupan el 100% */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Tamaño de fuente más pequeño */
+  }
+
+  #logotipo img {
+    width: 100px; /* Tamaño del logotipo más pequeño */
+  }
+
+  nav ul li {
+    padding: 0 5px; /* Espaciado más pequeño */
+  }
+
+  #aside {
+    margin-left: 0; /* Sin margen */
+    width: 100%; /* Ancho completo */
+  }
+
+  #sections {
+    margin-left: 0; /* Sin margen */
+    width: 100%; /* Ancho completo */
+  }
+}
